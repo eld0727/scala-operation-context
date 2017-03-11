@@ -31,7 +31,7 @@ class OperationContextLayout extends LayoutBase[ILoggingEvent] {
 
       ctx.data.readOnlySnapshot().foreach {
         case (key, value) =>
-          sb.append(" ").append(key).append("=").append(value).append()
+          sb.append(" ").append(key).append("=").append(value)
       }
 
       sb.append(separator)
